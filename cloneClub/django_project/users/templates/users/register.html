@@ -1,10 +1,41 @@
-{% extends "blog/base.html" %}
-
-{% block content %}
-    <div class="container py-5">
-        <form method="POST>
-            {% csrf_token %}
-            
-        </form>
-    </div>
+{% extends "blog/base.html" %} {% block content %}
+  <div class="bg-white p-4 rounded shadow w-100" style="max-width: 400px;">
+    <h2 class="text-center fw-bold mb-4">REGISTER</h2>
+    <form>
+        <div class="mb-3">
+            <input
+                type="text"
+                placeholder="Username"
+                class="form-control"
+            />
+        </div>
+        <div class="mb-3">
+            <input
+                type="email"
+                placeholder="Email"
+                class="form-control"
+            />
+        </div>
+        <div class="mb-3">
+            <input
+                type="password"
+                placeholder="Password"
+                class="form-control"
+            />
+        </div>
+        <div class="mb-3">
+            <input
+                type="password"
+                placeholder="Confirm Password"
+                class="form-control"
+            />
+        </div>
+        <button
+            type="submit"
+            class="btn btn-primary w-100"
+        >
+            REGISTER
+        </button>
+    </form>
+</div>
 {% endblock content %}
