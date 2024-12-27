@@ -1,6 +1,6 @@
 {% extends "blog/base.html" %} {% block content %}
   <div class="bg-white p-4 rounded shadow w-100" style="max-width: 400px;">
-    <h2 class="text-center fw-bold mb-4">REGISTER</h2>
+    <h2 class="text-center fw-bold mb-4">Login</h2>
     <form method="POST">
         <div class="mb-3">
             {% csrf_token %}
@@ -24,18 +24,11 @@
                 class="form-control"
             />
         </div>
-        <div class="mb-3">
-            <input
-                type="password"
-                placeholder="Confirm Password"
-                class="form-control"
-            />
-        </div>
         <button
             type="submit"
             class="btn btn-primary w-100"
         >
-            REGISTER
+            Login
         </button>
     </form>
 </div>
